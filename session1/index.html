@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8"/>
+    <title>Demo For Angular JS</title>
+    <script src="angular.min.js"></script>
+</head>
+<body ng-controller="myController">
+    <div>
+        <h3>Please enter your name</h3>
+        Name:<input type="text" ng-model="name" placeholder="Enter your name" />
+        <p>Hello <strong>{{name}}</strong>!</p>
+        <p>Welcome to Angular JS</p>
+    </div>
+        <script>
+            //same name as the beginning
+        var app = angular.module("myApp", []);
+        app.controller("myController", function ($scope) {
+            $scope.name = "";
+        });
+            //minuto      1.43.26
+    </script>
+
+</body>
+</html>
